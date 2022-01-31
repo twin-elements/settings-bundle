@@ -1,0 +1,21 @@
+{% extends '@TwinElementsAdmin/core/list.html.twig' %}
+
+{% block title %}{{ "admin_settings.settings"|translate_admin }}{% endblock %}
+
+{% block list %}
+<div class="d-flex p-8 mx-n6">
+{#    <div class="bg-light p-6 font-weight-bold mx-6 d-flex align-items-center">#}
+{#        <a href="{{ path('basic_data') }}">Podstawowe dane firmy<br>#}
+{#            Adresy email, Telefony</a>#}
+{#    </div>#}
+{#    <div class="bg-light p-6 font-weight-bold mx-6 d-flex align-items-center">#}
+{#        <a href="{{ path('codes') }}">#}
+{#            Kody marketingowe i analityczne:<br>#}
+{#            GTM, GA, FB Pixel, Yandex itd.#}
+{#        </a>#}
+{#    </div>#}
+    <div class="bg-light p-6 font-weight-bold mx-6 d-flex align-items-center">
+        <a href="{{ path('uploads') }}" class="text-center">{{ "admin_settings.uploads_module_name"|translate_admin }}</a>
+    </div>
+</div>
+{% endblock %}

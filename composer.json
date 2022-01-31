@@ -1,0 +1,25 @@
+{
+    "name": "twin-elements/settings-bundle",
+    "description": "Settings core library for CMS",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Władysław Dudko",
+            "email": "wladyslaw@jellinek.pl"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "symfony/framework-bundle": "^4.4 || ^5.4",
+        "twin-elements/admin-bundle": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "TwinElements\\SettingsBundle\\": "src/"
+        }
+    },
+    "conflict": {
+        "twin-elements/admin-bundle": "<1.8"
+    }
+}

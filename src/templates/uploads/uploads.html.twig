@@ -1,0 +1,15 @@
+{% extends '@TwinElementsAdmin/core/details_with_sidebar.html.twig' %}
+
+{% block title %}{{ 'admin_settings.uploads_module_name'|translate_admin }}{% endblock %}
+
+{% block right_sidebar %}
+    {% if "uploads.logo"|trans({},'uploads',app.request.defaultLocale) != "uploads.logo" %}
+        <h3 class="h6">{{ "admin_settings.logo"|translate_admin }}</h3>
+        <img src="{{ asset("uploads.logo"|trans({},'uploads',app.request.defaultLocale)) }}" alt="" class="w-100 img-fluid mb-8">
+    {% endif %}
+
+    {% if "uploads.sitemap"|trans({},'uploads',app.request.defaultLocale) != "uploads.sitemap" %}
+        <h3 class="h6">{{ "admin_settings.sitemap"|translate_admin }}</h3>
+        <a href="{{ asset("uploads.sitemap"|trans({},'uploads',app.request.defaultLocale)) }}" target="_blank" class="btn btn-primary rounded-pill">{{ "admin_settings.see_sitemap"|translate_admin }}</a>
+    {% endif %}
+{% endblock %}

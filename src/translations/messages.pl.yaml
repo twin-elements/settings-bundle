@@ -1,0 +1,8 @@
+admin_settings:
+  settings: Ustawienia zaawansowane
+  uploads_module_name: 'Sitemap / Logo'
+  logo: Logo
+  logo_help: "Dopuszczalne rozszerzenia plików: SVG, PNG. Maksymalny rozmiar: 1024 Kb"
+  sitemap: Mapa witryny (sitemap)
+  sitemap_help: 'Dopuszczalne rozszerzenie pliku: XML. Maksymalny rozmiar: 1024 Kb'
+  see_sitemap: Zobacz mapę witryny
