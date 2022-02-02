@@ -30,6 +30,7 @@ class SettingsUploadsType extends AbstractType
                     new File([
                         'maxSize' => '1024k',
                         'mimeTypes' => [
+                            'image/svg',
                             'image/svg+xml',
                             'image/png',
                         ],
