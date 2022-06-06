@@ -11,7 +11,7 @@ use TwinElements\AdminBundle\Helper\Breadcrumbs;
 use TwinElements\AdminBundle\Helper\CrudLoggerMessage;
 use TwinElements\AdminBundle\Helper\TranslationsManager;
 use TwinElements\AdminBundle\Model\CrudControllerTrait;
-use TwinElements\AdminBundle\Service\AdminTranslator;
+use TwinElements\Component\AdminTranslator\AdminTranslator;
 use TwinElements\Component\Flashes\Flashes;
 use TwinElements\SettingsBundle\Form\SettingsUploadsType;
 
