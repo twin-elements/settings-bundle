@@ -8,10 +8,10 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use TwinElements\AdminBundle\Helper\Breadcrumbs;
-use TwinElements\AdminBundle\Helper\CrudLoggerMessage;
 use TwinElements\AdminBundle\Helper\TranslationsManager;
 use TwinElements\AdminBundle\Model\CrudControllerTrait;
 use TwinElements\Component\AdminTranslator\AdminTranslator;
+use TwinElements\Component\CrudLogger\CrudLoggerInterface;
 use TwinElements\Component\Flashes\Flashes;
 use TwinElements\SettingsBundle\Form\SettingsUploadsType;
 
@@ -32,7 +32,7 @@ class SettingsController extends AbstractController
     public function __construct(
         Breadcrumbs         $breadcrumbs,
         Flashes             $flashes,
-        CrudLoggerMessage   $crudLogger,
+        CrudLoggerInterface   $crudLogger,
         AdminTranslator     $translator,
         TranslationsManager $translationsManager)
     {
